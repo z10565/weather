@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Service</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button onclick="getCurrentWeather()">Get Current Weather</button>
+        <button onclick="getWeatherForecast()">Get 5-Day Forecast</button>
+        
+        <div id="current-weather">
+            <h2>Current Weather</h2>
+            <div id="weather-data"> 
+                <!-- Forecast data will appear here -->
+            </div>
+        </div>
+
+        <div id="forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-data" class="forecast-container">
+                <!-- Forecast data will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
